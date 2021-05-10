@@ -1,0 +1,56 @@
+<div id="vendor-list-container">
+    <i class="fa fa-times-circle" id="btn-close-vendors"></i>
+    <h2 id="vendors-menu-tittle">Vendors List</h2>
+    <i class="fa fa-plus" id="btn-new-vendor"></i>
+    <div id="filter-vendors-container"> 
+        <!-- <label for="select-vendors-filter"></label> -->
+        <select name="select-vendors" id="select-vendors-filter">
+            <option value="0">Filter by</option>
+            <option value="1">Ecógrafo</option>
+            <option value="2">Equipo de tomografía axial computarizada (TAC)</option>
+            <option value="2">Rayos X</option>
+        </select>
+    </div>
+
+    <div id="table-vendors-menu-container">
+        <section id="table-vendors-container">
+            <table id="table-vendors">
+                <thead>
+                    <tr>
+                        <th>Vendor name</th>
+                        <th>vendor phone</th>
+                        <th>Vendor service</th>
+                    </tr>
+                </thead>
+                <tbody id="vendors-table">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="menu-table-vendors">
+            <form id="form-vendors-add">                
+                <label for="txt-vendors-name">Vendor name</label>
+                <input type="text" id="txt-vendors-name" placeholder="Vendor name">
+                
+                <label for="txt-vendors-phone">Contact number</label>
+                <input type="phone" id="txt-vendors-phone" placeholder="vendor phone">
+        
+                <label for="txt-vendors-name">Vendor services</label>
+                <select id="select-vendors-type">
+                    <option >Ecógrafos</option>
+                    <option >Equipos de tomografía axial computarizada (TAC)</option>
+                    <option >Rayos X</option>
+                </select>
+                <div id="controls-details">
+                    <label class="fa fa-angle-double-left" id="label-back-vendor-add"></label>
+                    <button class="fa fa-save" id="btn-add-new-vendor"></button>
+                </div>
+                <label id="console-add-vendor">...</label>
+            </form>
+
+        </section>
+        
+    </div>
+
+</div>

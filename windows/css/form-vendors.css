@@ -1,0 +1,150 @@
+div#vendor-list-container{
+    width: 700px;
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgb(73, 73, 73);
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(40, 150, 158);
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    height: 470px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: none; 
+}
+
+i#btn-close-vendors{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+i#btn-close-vendors:hover{
+    color: rgba(119, 46, 46, 0.719);
+}
+
+i#btn-new-vendor{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+i#btn-new-vendor:hover{
+    color: rgba(23, 230, 85, 0.836);
+}
+
+div#filter-vendors-container{
+    width: 300px;
+    margin-left: calc(100% - 300px);
+    text-align: left;
+}
+
+div#filter-vendors-container select{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+div#table-vendors-menu-container{
+    width:1400px;
+    height: 350px;
+    max-height: 350px;
+    display: flex;
+    transition: all 0.2s ease;
+}
+
+section#table-vendors-container{
+    width: 750px;
+    overflow-y: scroll;
+}
+
+table#table-vendors{
+    width: 670px;
+    text-align: left;
+    border-style: none;
+    border: none;
+}
+
+table#table-vendors thead{
+    color: #000;
+    border-bottom: 1px solid white;
+}
+
+table#table-vendors tr{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+table#table-vendors tr:hover{
+    background-color: rgba(252, 252, 252, 0.397);
+}
+
+section#menu-table-vendors{
+    width: 700px;
+    display: flex;
+    background-color: rgb(40, 150, 158);
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+
+/* Menu device details */
+form#form-vendors-add{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form#form-vendors-add input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+form#form-vendors-add select{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+div#controls-details{
+    width: 100%;
+    text-align: left;
+}
+
+button#btn-add-new-vendor{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    background-color: white;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+label#label-back-vendor-add{
+   margin-right: 300px;
+   cursor: pointer;
+}
+
+label#console-add-vendor{
+    width: 100%;
+    text-align: center;
+}

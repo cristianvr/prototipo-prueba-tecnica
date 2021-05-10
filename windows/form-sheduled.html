@@ -1,0 +1,59 @@
+<div id="sheduled-container">
+    <i class="fa fa-times-circle" id="btn-close-sheduled"></i>
+    <h2 id="sheduled-tittle">Maintenaces programed</h2>
+
+    <div id="filter-sheduled-container"> 
+        <!-- <label for="select-sheduled-filter"></label> -->
+        <select name="select-sheduled" id="select-sheduled-filter">
+            <option value="0">Filter by</option>
+            <option value="1">This month</option>
+            <option value="2">Next month</option>
+        </select>
+    </div>
+
+    <div id="table-sheduled-menu-container">
+        <section id="table-sheduled-container">
+            <table id="table-sheduled">
+                <thead>
+                    <tr id="x">
+                        <th>Device</th>
+                        <th>Location</th>
+                        <th>Next Maintenance</th>
+                        <th>Maintenance type</th>
+                        <th>Uses</th>
+                    </tr>
+                </thead>
+                <tbody id="sheduled-table">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section id="menu-table-sheduled">
+            <form id="form-device-details">                
+                <label for="txt-details-device-name">Device type</label>
+                <input type="text" id="txt-details-device-name" placeholder="Device name">
+                
+                <label for="txt-details-device-location">Device location</label>
+                <input type="text" id="txt-details-device-location" placeholder="Device location">
+        
+                <label for="txt-details-device-date">Nex maintenance</label>
+                <input type="date" id="txt-details-device-date" placeholder="nombre del dispositivo">
+
+                <input type="text" id="txt-details-device-id" hidden>
+            
+                <label for="txt-details-device-name">Maintenance type</label>
+                <select id="select-details-device-type">
+                    <option value="PREVENTIVO">PREVENTIVO</option>
+                    <option value="CORRECTIVO">CORRECTIVO</option>
+                </select>
+                <div id="controls-details">
+                    <label class="fa fa-angle-double-left" id="label-back-maintenance-details"></label>
+                    <button class="fa fa-sync" id="btn-update-maintenance-details"></button>
+                </div>
+                
+            </form>
+
+        </section>
+    </div>
+</div>
